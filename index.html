@@ -1,32 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-white text-gray-800">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Utkarsha Jadhav | Portfolio</title>
+  <link rel="icon" href="favicon.ico" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body class="font-sans transition-all">
 
-  <!-- Header / Navbar -->
-  <header class="bg-white shadow sticky top-0 z-50">
-    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">My Portfolio</h1>
-      <ul class="flex gap-6 text-sm">
-        <li><a href="#welcome" class="hover:text-blue-500">Welcome</a></li>
-        <li><a href="#about" class="hover:text-blue-500">About</a></li>
-        <li><a href="#achievements" class="hover:text-blue-500">Achievements</a></li>
-        <li><a href="#goals" class="hover:text-blue-500">Goals</a></li>
-        <li><a href="#personal" class="hover:text-blue-500">Personal</a></li>
+<!-- Header Section -->
+<header class="bg-gray-900 text-white shadow-md">
+  <div class="container mx-auto flex justify-between items-center p-4">
+    <h1 class="text-xl font-bold">Utkarsha Jadhav</h1>
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="#welcome" class="hover:text-blue-400">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#achievements" class="hover:text-blue-400">Achievements</a></li>
+        <li><a href="#goals" class="hover:text-blue-400">Goals</a></li>
+        <li><a href="#personal" class="hover:text-blue-400">Personal</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
       </ul>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <!-- Welcome Section -->
+<!-- Welcome Section -->
   <section id="welcome" class="py-12 bg-blue-100 text-center">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-semibold mb-4">Welcome! I'm Utkarsha Jadhav</h2>
+      <h2 class="text-3xl font-semibold mb-4">Welcome! I'm Utkarsha Jadhav </h2>
       <p class="mb-6">Glad to have you visit my digital space.</p>
       <img src="profile.jpg" alt="Profile Photo" class="mx-auto w-40 h-40 object-cover rounded-full shadow-md mb-6" />
       <video controls class="mx-auto w-full max-w-md rounded-lg shadow">
@@ -36,56 +39,125 @@
     </div>
   </section>
 
-  <!-- About Me Section -->
-  <section id="about" class="py-12 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl font-bold mb-4">About Me</h2>
-      <p><strong>Name:</strong> Utkarsha Jadhav</p>
-      <p><strong>Location:</strong> Palghar, Maharashtra</p>
-      <p><strong>Education:</strong> Degree Student</p>
-      <p><strong>Languages:</strong> Marathi, English, Hindi</p>
-    </div>
-  </section>
+<!-- About Me -->
+<section id="about" class="p-8">
+  <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+  <ul class="space-y-2">
+    <li><strong>Name:</strong> Utkarsha Jadhav</li>
+    <li><strong>Location:</strong> Palghar, Maharashtra</li>
+    <li><strong>Education:</strong> B.Tech, Electronics Computer Science, St John College</li>
+    <li><strong>Languages:</strong> English, Hindi, Marathi</li>
+  </ul>
+</section>
 
-  <!-- Achievements Section -->
-  <section id="achievements" class="py-12 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl font-bold mb-4">Achievements</h2>
-      <ul class="list-disc list-inside space-y-2">
-        <li>Secured Runner Up position in project showcase competition in my college.</li>
-        <li>Presented Solar Energy power plant in a science exhibition in interschool competition.</li>
-      </ul>
-    </div>
-  </section>
+<!-- Achievements (loaded via JS) -->
+<section id="achievements" class="p-8 bg-gray-100">
+  <h2 class="text-2xl font-semibold mb-4">Achievements</h2>
+  <ul id="achievement-list" class="list-disc pl-5">
+   <li>Secured Runner Up position in project show case competition in my college.</li>
+   <li>Presented Solar Energy power plant in Science exhibition in interschool competition</li>
+  </ul>
+</section>
 
-  <!-- Goals Section -->
-  <section id="goals" class="py-12 bg-pink-100">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl font-bold mb-4">Future Goals</h2>
-      <p>To become a skilled IT professional who develops innovative and efficient technology solutions that contribute to digital transformation and improve people's lives.</p>
-    </div>
-  </section>
+<!-- Goals -->
+<section id="goals" class="p-8 bg-white">
+  <h2 class="text-2xl font-semibold mb-4">Future Goals</h2>
+  <p>To become a skilled IT professional who develops innovative and efficient technology solutions that contribute to digital transformation and improve people's lives.</p>
+</section>
 
-  <!-- Personal Side Section -->
-  <section id="personal" class="py-12 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl font-bold mb-4">A Bit About My Personal Side</h2>
-      <p><strong>Hobbies:</strong> Dancing, Coding</p>
-      <p><strong>Role Models:</strong> My role model is Rohit Sharma because of his leadership and loyalty towards the game.</p>
-      <p><strong>Favorite Books:</strong> Believe In Yourself</p>
-      <p><strong>Websites:</strong> Dev.to, Hashnode, and Product Hunt for staying updated in tech.</p>
-      <p><strong>Startups I admire:</strong> Notion, Figma – amazing design and community-driven.</p>
-    </div>
-  </section>
+<!-- Personal Side -->
+<section id="personal" class="p-8 bg-gray-100">
+  <h2 class="text-2xl font-semibold mb-4">My Personal Side</h2>
 
-  <!-- Footer -->
-  <footer class="bg-blue-600 text-white py-6 text-center">
-    <p>Made by Utkarsha Jadhav. | © 2025</p>
-    <p>
-      <a href="https://github.com/utkarsha" target="_blank" class="underline">GitHub</a> |
-      <a href="https://linkedin.com/in/utkarsha" target="_blank" class="underline">LinkedIn</a>
-    </p>
-  </footer>
+  <h3 class="font-bold">Hobbies</h3>
+  <ul id="hobby-list" class="list-disc pl-5 mb-4"></ul>
+
+  <h3 class="font-bold">Role Models</h3>
+  <ul class="list-disc pl-5 mb-4">
+    <li>Elon Musk – Visionary Innovation</li>
+    <li>Michael Phelps – Discipline & Dedication</li>
+  </ul>
+
+  <h3 class="font-bold">Books & Startups</h3>
+  <ul class="list-disc pl-5">
+    <li><strong>Book:</strong> Deep Work – Cal Newport</li>
+    <li><strong>Site:</strong> <a href="https://ted.com" class="text-blue-500" target="_blank">TED.com</a></li>
+    <li><strong>Startup:</strong> Notion</li>
+  </ul>
+</section>
+
+<!-- Public API Section -->
+<section id="github" class="p-8 bg-white">
+  <h2 class="text-2xl font-semibold mb-4">My GitHub Repositories</h2>
+  <ul id="github-repos" class="list-disc pl-5"></ul>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="p-8 bg-gray-100">
+  <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
+  <ul class="mb-4 space-y-2">
+    <li><a href="tel:+919999999999" class="text-blue-600">📞 +91 99999 99999</a></li>
+    <li><a href="https://wa.me/919999999999" class="text-green-600" target="_blank">💬 WhatsApp Chat</a></li>
+    <li><a href="mailto:utkarsha@example.com" class="text-red-600">📧 utkarsha@example.com</a></li>
+    <li>
+      📍 My Location:
+      <iframe src="https://www.google.com/maps/embed?...yourmap..." class="w-full h-64 border mt-2" loading="lazy"></iframe>
+    </li>
+  </ul>
+
+  <h3 class="font-bold mb-2">Send Me a Message</h3>
+  <form action="https://formspree.io/f/your-id" method="POST" class="space-y-2">
+    <input type="text" name="name" placeholder="Your Name" class="w-full border p-2 rounded" required />
+    <input type="email" name="email" placeholder="Your Email" class="w-full border p-2 rounded" required />
+    <textarea name="message" placeholder="Your Message" class="w-full border p-2 rounded" required></textarea>
+    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Send</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center p-4">
+  <p>Connect with me:
+    <a href="https://linkedin.com/in/utkarsha-jadhav" class="underline text-blue-300">LinkedIn</a> |
+    <a href="https://github.com/utkarsha-jadhav" class="underline text-blue-300">GitHub</a>
+  </p>
+  <p>© 2025 Utkarsha Jadhav</p>
+</footer>
+
+<!-- Toggle Dark Mode -->
+<div class="fixed bottom-4 right-4">
+  <button onclick="document.documentElement.classList.toggle('dark')" class="bg-gray-200 dark:bg-gray-800 text-black dark:text-white p-2 rounded shadow">
+    🌓 Toggle Theme
+  </button>
+</div>
+
+<!-- Scripts -->
+<script>
+  // Load Achievements & Hobbies from JSON
+  fetch('data.json')
+    .then(res => res.json())
+    .then(data => {
+      const achievementList = document.getElementById('achievement-list');
+      data.achievements.forEach(item => {
+        achievementList.innerHTML += `<li>${item}</li>`;
+      });
+
+      const hobbyList = document.getElementById('hobby-list');
+      data.hobbies.forEach(hobby => {
+        hobbyList.innerHTML += `<li>${hobby}</li>`;
+      });
+    });
+
+  // Load GitHub Repos
+  fetch('https://api.github.com/users/piyush-warole/repos')
+    .then(res => res.json())
+    .then(repos => {
+      const list = document.getElementById('github-repos');
+      repos.forEach(repo => {
+        list.innerHTML += `<li><a href="${repo.html_url}" target="_blank">${repo.name}</a></li>`;
+      });
+    });
+</script>
 
 </body>
 </html>
+
